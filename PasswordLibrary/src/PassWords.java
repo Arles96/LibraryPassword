@@ -10,10 +10,6 @@
  */
 
 /**
-* TODO hacer la union de la informacion de la victima con la familia
-* TODO hacer la union de la informacion de victima con las mascotas
-* TODO hacer la union de la informacion de victima con la informacion extra
-* TODO hacer la union de la informacion de la familia con la victima
 * TODO hacer la union de la informacion de la familia con las mascotas
 * TODO hacer la union de la informacion de la familia con las fechas
 * TODO hacer la union de la informacion de la familia con la informacion extra
@@ -57,7 +53,10 @@ public class PassWords {
     
     public String allPassword(){
         String password="";
-        password = informationPersonWithDates();
+        password += informationPersonWithDates();
+        password += informationPersonWithFamily();
+        password += informationPersonWithPets();
+        password += informationPersonWithExtra();
         return password;
     }
     
@@ -170,7 +169,144 @@ public class PassWords {
         }
         //Union del segundo nombre de la victima con el primer apelllido del familiar
         for (Family family : person.getFamilies()) {
-            
+            password += person.getMiddleName() + family.getLastname1() + "\n";
+        }
+        //Union del primer apellido de la victima con el primer apellido del familair
+        for (Family family : person.getFamilies()) {
+            password += person.getLastname1() + family.getLastname1() + "\n";
+        }
+        //Union del segundo apellido de la victima con el primer apellido del familiar
+        for (Family family : person.getFamilies()) {
+            password += person.getLastName2() + family.getLastname1() + "\n";
+        }
+        //Union del primer nombre de la victima con el segundo apellido del familiar
+        for (Family family : person.getFamilies()) {
+            password += person.getFirsName() + family.getLastName2() + "\n";
+        }
+        //Union del segundo nombre de la victima con el segundo apellido del familiar
+        for (Family family : person.getFamilies()) {
+            password += person.getMiddleName() + family.getLastName2() + "\n";
+        }
+        //Union del primer apellido de la victima con el segundo apellido del familair
+        for (Family family : person.getFamilies()) {
+            password += person.getLastname1() + family.getLastName2() + "\n";
+        }
+        //Union del segundo apellido de la victima con el segundo apellido del familiar
+        for (Family family : person.getFamilies()) {
+            password += person.getLastName2() + family.getLastName2() + "\n";
+        }
+        //Union del primer nombre de la victima con toda la informacion del familiar
+        for (Family family : person.getFamilies()) {
+            password += person.getFirsName() + family.getFirsName() + family.getMiddleName() +
+                    family.getLastname1() + family.getLastName2() + "\n";
+        }
+        //Union del segundo nombre de la victima con toda la informacion del familiar
+        for (Family family : person.getFamilies()) {
+            password += person.getMiddleName() + family.getFirsName() + family.getMiddleName() +
+                    family.getLastname1() + family.getLastName2() + "\n";
+        }
+        //Union del primer apellido de la victima con toda la informacion del familiar
+        for (Family family : person.getFamilies()) {
+            password += person.getLastname1() + family.getFirsName() + family.getMiddleName() + 
+                    family.getLastname1() + family.getLastName2() + "\n";
+        }
+        //Union del segundo apellido de la victima con toda la informacion del familiar
+        for (Family family : person.getFamilies()) {
+            password += person.getLastName2() + family.getFirsName() + family.getMiddleName() + 
+                    family.getLastname1() + family.getLastName2() + "\n";
+        }
+        return password;
+    }
+    
+    private String informationPersonWithPets(){
+        String password = "";
+        //Union del primer nombre de la victima con el nombre de la mascota
+        for (Pets pet : person.getPets()) {
+            password += person.getFirsName() + pet.getName() + "\n";
+        }
+        //Union del segundo nombre de la victima con el nombre de la mascota
+        for (Pets pet : person.getPets()) {
+            password += person.getMiddleName() + pet.getName() + "\n";
+        }
+        //Union del primer apellido de la victima con el nombre de la mascota
+        for (Pets pet : person.getPets()) {
+            password += person.getLastname1() + pet.getName() + "\n";
+        }
+        //Union del segundo apellido de la victima con el nombre de la mascota
+        for (Pets pet : person.getPets()) {
+            password += person.getLastName2() + pet.getName() + "\n";
+        }
+        return password;
+    }
+
+    private String informationPersonWithExtra(){
+        String password = "";
+        //Union del primer nombre de la victima con la palabra extra
+        for (OtherThings extra : person.getExtra()) {
+            password += person.getFirsName() + extra.getWord() + "\n";
+        }
+        //Union del segundo nombre de la victima con la palabra extra
+        for (OtherThings extra : person.getExtra()) {
+            password += person.getMiddleName() + extra.getWord() + "\n";
+        }
+        //Union del primer apellido de la victima con la palabra extra
+        for (OtherThings extra : person.getExtra()) {
+            password += person.getLastname1() + extra.getWord() + "\n";
+        }
+        //Union del segundo apellido de la victima con la palabra extra
+        for (OtherThings extra : person.getExtra()) {
+            password += person.getLastName2() + extra.getWord() + "\n";
+        }
+        return password;
+    }
+    
+    private String informationFamilyWithPerson(){
+        String password = "";
+        for (Family family : person.getFamilies()) {
+            //Union del primer nombre del familiar con el primer nombre de la victima
+            password += family.getFirsName() + person.getFirsName() + "\n";
+            //Union del segundo nombre del familiar con el primer nombre de la victima
+            password += family.getMiddleName() + person.getFirsName() + "\n";
+            //Union del primer apellido del familiar con el primer nombre de la victima
+            password += family.getLastname1() + person.getFirsName() + "\n";
+            //Union del segundo apellido del familiar con el primer nombre de la victima
+            password += family.getLastName2() + person.getFirsName() + "\n";
+            //Union del primer nombre del familiar con el segundo nombre de la victima
+            password += family.getFirsName() + person.getMiddleName() + "\n";
+            //Union del segundo nombre del familiar con el segundo nombre de la victima
+            password += family.getMiddleName() + person.getMiddleName() + "\n";
+            //Union del primer apellido del familiar con el seguno nombre de la victima
+            password += family.getLastname1() + person.getLastname1() + "\n";
+            //Union del segundo apellido del familiar con el segundo nombre de la victima
+            password += family.getLastName2() + person.getMiddleName() + "\n";
+            //Union del primer nombre del familiar con el primer apellido de la victima
+            password += family.getFirsName() + person.getLastname1() + "\n";
+            //Union del segundo nombre del familair con el primer apellido de la victima
+            password += family.getMiddleName() + person.getLastname1() + "\n";
+            //Union del primer apellido del familiar con el primer apellido de la victima
+            password += family.getLastname1() + person.getLastname1() + "\n";
+            //Union del segundo apellido del familiar con el primer apellido de la victima
+            password += family.getLastName2() + person.getLastname1() + "\n";
+            //Union del primer nombre del familair con el seguno apellido de la victima
+            password += family.getFirsName() + person.getLastName2() + "\n";
+            //Union del segundo nombre del familiar con el segundo apellido de la victima
+            password += family.getMiddleName() + person.getLastName2() + "\n";
+            //Union del primer apellido del familiar con el seguno apellido de la victima
+            password += family.getLastname1() + person.getLastName2() + "\n";
+            //Union del segundo apellido del familiar con el segundo apellido de la victima
+            password += family.getLastName2() + person.getLastName2() + "\n";
+            //Union del primer nombre del familiar con toda la informacion de la victima
+            password += family.getFirsName() + person.getFirsName() + person.getMiddleName() +
+                    person.getLastname1() + person.getLastName2() + "\n";
+            //Union del segundo nombre del familiar con toda la informacion de la victima
+            password += family.getMiddleName() + person.getFirsName() + person.getMiddleName() +
+                    person.getLastname1() + person.getLastName2() + "\n";
+            //Union del primer apellido del familiar con toda la informacion de la victima
+            password += family.getLastname1() + person.getFirsName() + person.getMiddleName() + 
+                    person.getLastname1() + person.getLastName2() + "\n";
+            //Union del segundo apellido del familiar con toda la informacion de la victima
+            password += family.getLastName2() + person.getFirsName() + person.getMiddleName() +
+                    person.getLastname1() + person.getLastName2() + "\n";
         }
         return password;
     }
