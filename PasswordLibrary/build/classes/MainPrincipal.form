@@ -1,0 +1,1424 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JDialog" name="jDialog_modify_victim">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="panel_principal_person" alignment="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="panel_principal_person" alignment="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="panel_principal_person">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="label_title_person" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="label_lastName2_victimModify" min="-2" pref="98" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="textField_lastName2_victimModify" min="-2" pref="159" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="label_middleName_victimModify" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="textField_middleName_victimModify" min="-2" pref="159" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="label_firstName_victimModify" min="-2" pref="98" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="textField_firstName_victimModify" min="-2" pref="159" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="label_lastName1_victimModify" min="-2" pref="98" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="textField_lastName1_victimModify" min="-2" pref="159" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="0" pref="90" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="197" max="-2" attributes="0"/>
+                      <Component id="button_safeModifyVictim" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="label_title_person" min="-2" pref="31" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_firstName_victimModify" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="textField_firstName_victimModify" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="label_middleName_victimModify" alignment="0" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="textField_middleName_victimModify" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_lastName1_victimModify" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="textField_lastName1_victimModify" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_lastName2_victimModify" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="textField_lastName2_victimModify" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="button_safeModifyVictim" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="83" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="label_title_person">
+              <Properties>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="MODIFICANDO PERSONA"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="label_firstName_victimModify">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Primer Nombre"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textField_firstName_victimModify">
+            </Component>
+            <Component class="javax.swing.JLabel" name="label_middleName_victimModify">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Segundo Nombre"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textField_middleName_victimModify">
+            </Component>
+            <Component class="javax.swing.JLabel" name="label_lastName1_victimModify">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Primer Apellido"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textField_lastName1_victimModify">
+            </Component>
+            <Component class="javax.swing.JLabel" name="label_lastName2_victimModify">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Segundo Apellido"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textField_lastName2_victimModify">
+            </Component>
+            <Component class="javax.swing.JButton" name="button_safeModifyVictim">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Guadar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button_safeModifyVictimActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JDialog" name="jDialog_modify_family">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="label_title_modifyFamily" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="213" max="-2" attributes="0"/>
+                                  <Component id="button_safeModify_family" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
+                                  <Component id="jComboBox_modify_families" min="-2" pref="272" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="0" pref="108" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="label_description_familyModify" min="-2" pref="98" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="textField_description_familyModify" min="-2" pref="159" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="label_lastName2_familyModify" min="-2" pref="98" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="textField_lastName2_familyModify" min="-2" pref="159" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="label_middleName_familyModify" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="textField_middleName_familyModify" min="-2" pref="159" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="label_firstName_familyModify" min="-2" pref="98" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="textField_firstName_familyModify" min="-2" pref="159" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="label_lasName1_familyModify" min="-2" pref="98" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="textField_lastName1_familyModify" min="-2" pref="159" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="117" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="label_title_modifyFamily" min="-2" pref="28" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jComboBox_modify_families" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="201" max="32767" attributes="0"/>
+                  <Component id="button_safeModify_family" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+              </Group>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_description_familyModify" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="textField_description_familyModify" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_firstName_familyModify" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="textField_firstName_familyModify" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="label_middleName_familyModify" alignment="0" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="textField_middleName_familyModify" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_lasName1_familyModify" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="textField_lastName1_familyModify" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_lastName2_familyModify" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="textField_lastName2_familyModify" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="108" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="label_title_modifyFamily">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="MODIFICANDO FAMILIARES"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="label_description_familyModify">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Descripcion"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="textField_description_familyModify">
+        </Component>
+        <Component class="javax.swing.JLabel" name="label_firstName_familyModify">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Primer Nombre"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="textField_firstName_familyModify">
+        </Component>
+        <Component class="javax.swing.JLabel" name="label_middleName_familyModify">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Segundo Nombre"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="textField_middleName_familyModify">
+        </Component>
+        <Component class="javax.swing.JLabel" name="label_lasName1_familyModify">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Primer Apellido"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="textField_lastName1_familyModify">
+        </Component>
+        <Component class="javax.swing.JLabel" name="label_lastName2_familyModify">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Segundo Apellido"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="textField_lastName2_familyModify">
+        </Component>
+        <Component class="javax.swing.JComboBox" name="jComboBox_modify_families">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="0"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="jComboBox_modify_familiesItemStateChanged"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="button_safeModify_family">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Guardar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button_safeModify_familyActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JDialog" name="jDialog_modify_Dates">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="panel_principal_dates" alignment="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="panel_principal_dates" alignment="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="panel_principal_dates">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel1" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="141" max="-2" attributes="0"/>
+                              <Component id="jComboBox_modify_dates" min="-2" pref="260" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="124" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="226" max="-2" attributes="0"/>
+                      <Component id="button_safeModify_dates" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="label_description_datesModify" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="textField_description_dateModify" min="-2" pref="159" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="label_day_dateModify" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="textField_day_dateModify" min="-2" pref="159" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="label_month_datesModify" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="label_year_datesModify" alignment="1" pref="98" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="textField_year_dateModify" alignment="0" min="-2" pref="159" max="-2" attributes="0"/>
+                                      <Component id="textField_month_dateModify" alignment="0" min="-2" pref="159" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace pref="131" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" pref="33" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jComboBox_modify_dates" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="195" max="32767" attributes="0"/>
+                      <Component id="button_safeModify_dates" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_description_datesModify" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_description_dateModify" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_day_dateModify" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_day_dateModify" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_month_datesModify" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_month_dateModify" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_year_datesModify" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_year_dateModify" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="133" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="MODIFICANDO FECHAS"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="label_description_datesModify">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Descripcion"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textField_description_dateModify">
+            </Component>
+            <Component class="javax.swing.JLabel" name="label_day_dateModify">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Dia"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textField_day_dateModify">
+            </Component>
+            <Component class="javax.swing.JLabel" name="label_month_datesModify">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Mes"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textField_month_dateModify">
+            </Component>
+            <Component class="javax.swing.JLabel" name="label_year_datesModify">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="A&#xf1;o"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textField_year_dateModify">
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBox_modify_dates">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="0"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="jComboBox_modify_datesItemStateChanged"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="button_safeModify_dates">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Guadar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button_safeModify_datesActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JDialog" name="jDialog_modify_pets">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="panel_principal_pets" alignment="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="panel_principal_pets" alignment="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="panel_principal_pets">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="label_title_pets" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="124" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="label_description_petsModify" min="-2" pref="98" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="textField_description_petsModify" min="-2" pref="159" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="label_name_petsModify" min="-2" pref="98" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="textField_name_petsModify" min="-2" pref="159" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jComboBox_modify_pets" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="120" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="223" max="-2" attributes="0"/>
+                      <Component id="button_safeModify_pets" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="label_title_pets" min="-2" pref="39" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jComboBox_modify_pets" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_description_petsModify" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="textField_description_petsModify" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_name_petsModify" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="textField_name_petsModify" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="button_safeModify_pets" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="149" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="label_title_pets">
+              <Properties>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="MODIFICANDO MASCOTAS"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="label_description_petsModify">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Descripcion"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textField_description_petsModify">
+            </Component>
+            <Component class="javax.swing.JLabel" name="label_name_petsModify">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Nombre"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textField_name_petsModify">
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBox_modify_pets">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="0"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="jComboBox_modify_petsItemStateChanged"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="button_safeModify_pets">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Guardar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button_safeModify_petsActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JDialog" name="jDialog_modify_extra">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="panel_principal_extra" alignment="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="panel_principal_extra" alignment="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="panel_principal_extra">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="label_title_extra" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="120" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="label_description_extra1" min="-2" pref="98" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="textField_description_extraModify" min="-2" pref="159" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="label_word_extra1" min="-2" pref="98" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="textField_word_extraModify" min="-2" pref="159" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jComboBox_modify_extra" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="button_safeModify_extra" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="221" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="label_title_extra" min="-2" pref="34" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jComboBox_modify_extra" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_description_extra1" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="textField_description_extraModify" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_word_extra1" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="textField_word_extraModify" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="button_safeModify_extra" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="60" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="label_title_extra">
+              <Properties>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="MODIFICANDO INFORMACION EXTRA"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="label_description_extra1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Descripcion"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textField_description_extraModify">
+            </Component>
+            <Component class="javax.swing.JLabel" name="label_word_extra1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Palabra"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="textField_word_extraModify">
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBox_modify_extra">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="0"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="jComboBox_modify_extraItemStateChanged"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="button_safeModify_extra">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Guardar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button_safeModify_extraActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Menu class="javax.swing.JMenuBar" name="menu_bar">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="menu_file">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Archivos"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menu_edit">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Editar"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem_modify_victim">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Persona"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem_modify_victimActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem_modify_family">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Familares"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem_modify_familyActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem_modify_pets">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Mascotas"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem_modify_petsActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem_modify_dates">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Fechas"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem_modify_datesActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem_modify_extra">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Extra"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem_modify_extraActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="menu_bar"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="panel_principal" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="panel_principal" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="panel_principal">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jTabbedPane_principal" max="32767" attributes="0"/>
+                      <Component id="label_title_program" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="label_title_program" max="32767" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jTabbedPane_principal" min="-2" pref="352" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JTabbedPane" name="jTabbedPane_principal">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="panel_victim">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Persona">
+                    <Property name="tabTitle" type="java.lang.String" value="Persona"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="168" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="label_lastName2_victim" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="textField_lastName2_victim" min="-2" pref="159" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="label_middleName_victim" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="textField_middleName_victim" min="-2" pref="159" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="label_firstName_victim" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="textField_firstName_victim" min="-2" pref="159" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="label_lastName1_victim" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="textField_lastName1_victim" min="-2" pref="159" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace pref="167" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="button_safeVictim" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="262" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_firstName_victim" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_firstName_victim" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="label_middleName_victim" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_middleName_victim" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_lastName1_victim" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_lastName1_victim" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_lastName2_victim" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_lastName2_victim" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="button_safeVictim" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="113" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="label_firstName_victim">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Primer Nombre"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="label_middleName_victim">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Segundo Nombre"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="label_lastName1_victim">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Primer Apellido"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="label_lastName2_victim">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Segundo Apellido"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="textField_firstName_victim">
+                </Component>
+                <Component class="javax.swing.JTextField" name="textField_middleName_victim">
+                </Component>
+                <Component class="javax.swing.JTextField" name="textField_lastName1_victim">
+                </Component>
+                <Component class="javax.swing.JTextField" name="textField_lastName2_victim">
+                </Component>
+                <Component class="javax.swing.JButton" name="button_safeVictim">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Guardar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="button_safeVictimMouseClicked"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="panel_family">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Familiar">
+                    <Property name="tabTitle" type="java.lang.String" value="Familiar"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace pref="182" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="label_description_family" min="-2" pref="98" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="textField_description_family" min="-2" pref="159" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="label_lastName2_family" min="-2" pref="98" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="textField_lastName2_family" min="-2" pref="159" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="label_middleName_family" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="textField_middleName_family" min="-2" pref="159" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="label_firstName_family" min="-2" pref="98" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="textField_firstName_family" min="-2" pref="159" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="label_lasName1_family" min="-2" pref="98" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="textField_lastName1_family" min="-2" pref="159" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="153" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="button_safeFamily" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="244" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_description_family" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_description_family" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_firstName_family" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_firstName_family" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="label_middleName_family" alignment="0" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_middleName_family" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_lasName1_family" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_lastName1_family" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_lastName2_family" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_lastName2_family" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="button_safeFamily" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="99" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="label_firstName_family">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Primer Nombre"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="textField_firstName_family">
+                </Component>
+                <Component class="javax.swing.JLabel" name="label_middleName_family">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Segundo Nombre"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="textField_middleName_family">
+                </Component>
+                <Component class="javax.swing.JLabel" name="label_lasName1_family">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Primer Apellido"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="textField_lastName1_family">
+                </Component>
+                <Component class="javax.swing.JLabel" name="label_lastName2_family">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Segundo Apellido"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="textField_lastName2_family">
+                </Component>
+                <Component class="javax.swing.JLabel" name="label_description_family">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Descripcion"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="textField_description_family">
+                </Component>
+                <Component class="javax.swing.JButton" name="button_safeFamily">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Guardar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button_safeFamilyActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="panel_pets">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Mascota">
+                    <Property name="tabTitle" type="java.lang.String" value="Mascota"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace pref="172" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="label_description_pets" min="-2" pref="98" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="textField_description_pets" min="-2" pref="159" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="label_name_pets" min="-2" pref="98" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="textField_name_pets" min="-2" pref="159" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="163" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="button_safePets" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="266" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_description_pets" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_description_pets" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_name_pets" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_name_pets" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="button_safePets" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="140" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="label_description_pets">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Descripcion"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="textField_description_pets">
+                </Component>
+                <Component class="javax.swing.JLabel" name="label_name_pets">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Nombre"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="textField_name_pets">
+                </Component>
+                <Component class="javax.swing.JButton" name="button_safePets">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Guadar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="button_safePetsMouseClicked"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel1">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Fechas">
+                    <Property name="tabTitle" type="java.lang.String" value="Fechas"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace pref="180" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="label_description_dates" min="-2" pref="98" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="textField_description_date" min="-2" pref="159" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="label_day_date" min="-2" pref="98" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="textField_day_date" min="-2" pref="159" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="label_month_dates" max="32767" attributes="0"/>
+                                              <Component id="label_year_dates" pref="98" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="textField_year_date" min="-2" pref="159" max="-2" attributes="0"/>
+                                              <Component id="textField_month_date" alignment="0" min="-2" pref="159" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="155" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="button_safeDate" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="247" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_description_dates" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_description_date" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_day_date" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_day_date" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_month_dates" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_month_date" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_year_dates" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_year_date" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                          <Component id="button_safeDate" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="115" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="label_description_dates">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Descripcion"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="textField_description_date">
+                </Component>
+                <Component class="javax.swing.JLabel" name="label_day_date">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Dia"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="textField_day_date">
+                </Component>
+                <Component class="javax.swing.JLabel" name="label_month_dates">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Mes"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="textField_month_date">
+                </Component>
+                <Component class="javax.swing.JLabel" name="label_year_dates">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="A&#xf1;o"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="textField_year_date">
+                </Component>
+                <Component class="javax.swing.JButton" name="button_safeDate">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Guardar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="button_safeDateMouseClicked"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="panel_otherThings">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Informacion Extra">
+                    <Property name="tabTitle" type="java.lang.String" value="Informacion Extra"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace pref="172" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="label_description_extra" min="-2" pref="98" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="textField_description_extra" min="-2" pref="159" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="label_word_extra" min="-2" pref="98" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="textField_word_extra" min="-2" pref="159" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="163" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="button_safeExtra" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="258" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_description_extra" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_description_extra" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="label_word_extra" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="textField_word_extra" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                          <Component id="button_safeExtra" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="144" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="label_description_extra">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Descripcion"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="textField_description_extra">
+                </Component>
+                <Component class="javax.swing.JLabel" name="label_word_extra">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Palabra"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="textField_word_extra">
+                </Component>
+                <Component class="javax.swing.JButton" name="button_safeExtra">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Guadar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="button_safeExtraMouseClicked"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="panel_password">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Contrase&#xf1;as">
+                    <Property name="tabTitle" type="java.lang.String" value="Contrase&#xf1;as"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="610" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="324" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="label_title_program">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="PASSWORD LIBRARY"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
