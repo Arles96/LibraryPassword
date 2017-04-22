@@ -10,9 +10,6 @@
  */
 
 /**
-* TODO hacer la union de la informacion de la familia con las mascotas
-* TODO hacer la union de la informacion de la familia con las fechas
-* TODO hacer la union de la informacion de la familia con la informacion extra
 * TODO hacer la union de la informacion de la mascotas con las victima
 * TODO hacer la union de la informacion de la mascota con la familia
 * TODO hacer la union de la informacion de la mascota con las fechas
@@ -57,6 +54,11 @@ public class PassWords {
         password += informationPersonWithFamily();
         password += informationPersonWithPets();
         password += informationPersonWithExtra();
+        password += informationFamilyWithPerson();
+        password += informationFamilyWithPets();
+        password += informationFamilyWithDates();
+        password += informationFamilyWithExtra();
+        password += informationPetsWithPerson();
         return password;
     }
     
@@ -306,6 +308,103 @@ public class PassWords {
                     person.getLastname1() + person.getLastName2() + "\n";
             //Union del segundo apellido del familiar con toda la informacion de la victima
             password += family.getLastName2() + person.getFirsName() + person.getMiddleName() +
+                    person.getLastname1() + person.getLastName2() + "\n";
+        }
+        return password;
+    }
+    
+    private String informationFamilyWithPets(){
+        String password = "";
+        for (Family family : person.getFamilies()) {
+            for (Pets pet : person.getPets()) {
+                //Union del primer nombre del familiar con el nombre de la mascota
+                password += family.getFirsName() + pet.getName() + "\n";
+                //Union del segundo nombre del familiar con el nombre de la mascota
+                password += family.getMiddleName() + pet.getName() + "\n";
+                //Union del primer apellido del familiar con el nombre de la mastoca
+                password += family.getLastname1() + pet.getName() + "\n";
+                //Union del segundo apellido del familair con el nombre de la mascota
+                password += family.getLastName2() + pet.getName() + "\n";
+            }
+        }
+        return password;
+    }
+    
+    private String informationFamilyWithDates(){
+        String password = "";
+        for (Family family : person.getFamilies()) {
+            for (DatePerson date : person.getDates()) {
+                //Union del primer nombre del familiar con el dia
+                password += family.getFirsName() + date.getDay() + "\n";
+                //Union del segundo nombre del familair con el dia
+                password += family.getMiddleName() + date.getDay() + "\n";
+                //Union del primer apellido del familiar con el dia
+                password += family.getLastname1() + date.getDay() + "\n";
+                //Union del segundo apellido del familiar con el dia
+                password += family.getLastName2() + date.getDay() + "\n";
+                //Union del primer nombre del familiar con el mes
+                password += family.getFirsName() + date.getMonth() + "\n";
+                //Union del segundo nombre del familiar con el mes
+                password += family.getMiddleName() + date.getMonth() + "\n";
+                //Union del primer apellido del familiar con el mes
+                password += family.getLastname1() + date.getMonth() + "\n";
+                //Union del segundo apellido del familiar con el mes
+                password += family.getLastName2() + date.getMonth() + "\n";
+                //Union del primer nombre del familiar con el año
+                password += family.getFirsName() + date.getYears() + "\n";
+                //Union del segundo nombre del familiar con el año
+                password += family.getMiddleName() + date.getYears() + "\n";
+                //Union del primer apellido del familiar con el año
+                password += family.getLastname1() + date.getYears() + "\n";
+                //Union del segundo apellido del familiar con el año
+                password += family.getLastName2() + date.getYears() + "\n";
+                //Union del primer nombre del familiar con toda la informacionde las fechas
+                password += family.getFirsName() + date.getDay() + date.getMonth() + 
+                        date.getYears() + "\n";
+                //Union del segundo nombre del familiar con toda la informacion de las fechas
+                password += family.getMiddleName() + date.getDay() + date.getMonth() +
+                        date.getYears() + "\n";
+                //Union del primer apellido del familiar con toda la informacion de las fechas
+                password += family.getLastname1() + date.getDay() + date.getMonth() + 
+                        date.getYears() + "\n";
+                //Union del segundo apellido del familiar con toda la informacion de las fechas
+                password += family.getLastName2() + date.getDay() + date.getMonth() + 
+                        date.getYears() + "\n";
+            }
+        }
+        return password;
+    }
+    
+    private String informationFamilyWithExtra(){
+        String password = "";
+        for (Family family : person.getFamilies()) {
+            for (OtherThings extra : person.getExtra()) {
+                //Union del primer nombre del familiar con la palabra extra
+                password += family.getFirsName() + extra.getWord() + "\n";
+                //Union del segundo nombre del familiar con la palabra extra
+                password += family.getMiddleName() + extra.getWord() + "\n";
+                //Union del primer apellido del familiar con la palabra extra
+                password += family.getLastname1() + extra.getWord() + "\n";
+                //Union del segundo apellido del familiar con la palabra extra
+                password += family.getLastName2() + extra.getWord() + "\n";                
+            }
+        }
+        return password;
+    }
+    
+    private String informationPetsWithPerson(){
+        String password = "";
+        for (Pets pet : person.getPets()) {
+            //Union del nombre de la mascota con el primer nombre de la victima
+            password += pet.getName() + person.getFirsName() + "\n";
+            //Union del nombre de la mascota con el seguno nombre de la victima
+            password += pet.getName() + person.getMiddleName() + "\n";
+            //Union del nombre de la mascota con el primer apellido de la victima
+            password += pet.getName() + person.getLastname1() + "\n";
+            //Union del nombre de la mascota con el segundo apellido de la victima
+            password += pet.getName() + person.getLastName2() + "\n";
+            //Union del nombre de la mascota con toda la informacion de la victima
+            password += pet.getName() + person.getFirsName() + person.getMiddleName() +
                     person.getLastname1() + person.getLastName2() + "\n";
         }
         return password;
