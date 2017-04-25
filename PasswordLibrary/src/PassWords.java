@@ -10,9 +10,6 @@
  */
 
 /**
-* TODO hacer la union de la informacion de la fechas con la familia
-* TODO hacer la union de la informacion de las fechas con las mascotas
-* TODO hacer la union de la informacion de las fechas con la informacion extra
 * TODO hacer la union de la informacion extra con la victima
 * TODO hacer la union de la informacion extra con la familia
 * TODO hacer la union de la informacion extra con las fechas
@@ -58,6 +55,9 @@ public class PassWords {
         password += informationPetsWithDates();
         password += informationPetsWithExtra();
         password += informationDatesWithPerson();
+        password += informationDatesWithFamily();
+        password += informationDatesWithPets();
+        password += informationDatesWithExtra();
         return password;
     }
     
@@ -488,4 +488,74 @@ public class PassWords {
         }
         return password;
     }
+    
+    private String informationDatesWithFamily(){
+        String password = "";
+        for (DatePerson date : person.getDates()) {
+            for (Family family : person.getFamilies()) {
+                //Union del dia con el primer nombre del familiar
+                password += date.getDay() + family.getFirsName() + "\n";
+                //Union del dia con el segundo nombre del familiar
+                password += date.getDay() + family.getMiddleName() + "\n";
+                //Uion del dia con el primer apellido del familiar
+                password += date.getDay() + family.getLastname1() + "\n";
+                //Uion del dia con el segundo apellido del familiar
+                password += date.getDay() + family.getLastName2() + "\n";
+                //Union con el mes con el primer nombre de familiar
+                password += date.getMonth() + family.getFirsName() + "\n";
+                //Union con el mes con el segundo nombre del familiar
+                password += date.getMonth() + family.getMiddleName() + "\n";
+                //Union con el mes con el primer apellido del familiar
+                password += date.getMonth() + family.getLastname1() + "\n";
+                //Union con el mes con el segundo apellido del familiar
+                password += date.getMonth() + family.getLastName2() + "\n";
+                //Union con el año con el primer nombre del familiar
+                password += date.getYears() + family.getFirsName() + "\n";
+                //Union del año con el segundo nombre del familiar
+                password += date.getYears() + family.getMiddleName() + "\n";
+                //Union del año con el primer apellido del familiar
+                password += date.getYears() + family.getLastname1() + "\n";
+                //Union del año con el segundo apellido del familiar
+                password += date.getYears() + family.getLastName2() + "\n";
+            }
+        }
+        return password;
+    }
+    
+    private String informationDatesWithPets(){
+        String password = "";
+        for (DatePerson date : person.getDates()) {
+            for (Pets pet : person.getPets()) {
+                //Union del dia con el nombre de la mascota
+                password += date.getDay() + pet.getName() + "\n";
+                //Union del mes con el nombre de la mascota
+                password += date.getMonth() + pet.getName() + "\n";
+                //Union del año con el nombre de la mascota 
+                password += date.getYears() + pet.getName() + "\n";
+            }
+        }
+        return password;
+    }
+    
+    private String informationDatesWithExtra(){
+        String password = "";
+        for (DatePerson date : person.getDates()) {
+            for (OtherThings extra : person.getExtra()) {
+                //Union del dia con la palabra extra
+                password += date.getDay() + extra.getWord() + "\n";
+                //Union del mes con la palabra extra
+                password += date.getDay() + extra.getWord() + "\n";
+                //Union del año con la palabra extra
+                password += date.getDay() + extra.getWord() + "\n";
+            }
+        }
+        return password;
+    }
+    
+    private String informationExtraWithPerson(){
+        String password = "";
+        
+        return password;
+    }
+    
 }
