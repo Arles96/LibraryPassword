@@ -25,6 +25,7 @@ public class MainPrincipal extends javax.swing.JFrame {
     
     //atributo
     private Victim person;
+    private PassWords password;
     
     //Metodos de administracion
     
@@ -228,7 +229,11 @@ public class MainPrincipal extends javax.swing.JFrame {
         textField_word_extra = new javax.swing.JTextField();
         button_safeExtra = new javax.swing.JButton();
         panel_password = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        textArea_password = new javax.swing.JTextArea();
+        button_removePassword = new javax.swing.JButton();
         label_title_program = new javax.swing.JLabel();
+        button_doPassword = new javax.swing.JButton();
         menu_bar = new javax.swing.JMenuBar();
         menu_file = new javax.swing.JMenu();
         menu_edit = new javax.swing.JMenu();
@@ -1024,21 +1029,46 @@ public class MainPrincipal extends javax.swing.JFrame {
 
         jTabbedPane_principal.addTab("Informacion Extra", panel_otherThings);
 
+        textArea_password.setColumns(20);
+        textArea_password.setRows(5);
+        jScrollPane1.setViewportView(textArea_password);
+
+        button_removePassword.setText("Eliminar contraseña");
+
         javax.swing.GroupLayout panel_passwordLayout = new javax.swing.GroupLayout(panel_password);
         panel_password.setLayout(panel_passwordLayout);
         panel_passwordLayout.setHorizontalGroup(
             panel_passwordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 610, Short.MAX_VALUE)
+            .addGroup(panel_passwordLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1)
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_passwordLayout.createSequentialGroup()
+                .addContainerGap(235, Short.MAX_VALUE)
+                .addComponent(button_removePassword)
+                .addGap(227, 227, 227))
         );
         panel_passwordLayout.setVerticalGroup(
             panel_passwordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 324, Short.MAX_VALUE)
+            .addGroup(panel_passwordLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(button_removePassword)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTabbedPane_principal.addTab("Contraseñas", panel_password);
 
         label_title_program.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         label_title_program.setText("PASSWORD LIBRARY");
+
+        button_doPassword.setText("Contraseñas");
+        button_doPassword.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button_doPasswordActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panel_principalLayout = new javax.swing.GroupLayout(panel_principal);
         panel_principal.setLayout(panel_principalLayout);
@@ -1048,14 +1078,20 @@ public class MainPrincipal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTabbedPane_principal)
-                    .addComponent(label_title_program, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(panel_principalLayout.createSequentialGroup()
+                        .addComponent(label_title_program, javax.swing.GroupLayout.PREFERRED_SIZE, 483, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(button_doPassword)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         panel_principalLayout.setVerticalGroup(
             panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_principalLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(label_title_program, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(label_title_program, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(button_doPassword))
                 .addGap(18, 18, 18)
                 .addComponent(jTabbedPane_principal, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -1519,6 +1555,18 @@ public class MainPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_button_safeModify_extraActionPerformed
 
     
+    private void button_doPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_doPasswordActionPerformed
+        if (password==null) {
+            password = new PassWords(person);
+            String words = password.allPassword();
+            textArea_password.setText(words);
+        }
+        else {
+            JOptionPane.showMessageDialog(this, "Y hay contraseñas existentes");
+        }
+    }//GEN-LAST:event_button_doPasswordActionPerformed
+
+    
     /**
      * @param args the command line arguments
      */
@@ -1549,6 +1597,8 @@ public class MainPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton button_doPassword;
+    private javax.swing.JButton button_removePassword;
     private javax.swing.JButton button_safeDate;
     private javax.swing.JButton button_safeExtra;
     private javax.swing.JButton button_safeFamily;
@@ -1575,6 +1625,7 @@ public class MainPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem_modify_pets;
     private javax.swing.JMenuItem jMenuItem_modify_victim;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane_principal;
     private javax.swing.JLabel label_day_date;
     private javax.swing.JLabel label_day_dateModify;
@@ -1628,6 +1679,7 @@ public class MainPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel panel_principal_person;
     private javax.swing.JPanel panel_principal_pets;
     private javax.swing.JPanel panel_victim;
+    private javax.swing.JTextArea textArea_password;
     private javax.swing.JTextField textField_day_date;
     private javax.swing.JTextField textField_day_dateModify;
     private javax.swing.JTextField textField_description_date;

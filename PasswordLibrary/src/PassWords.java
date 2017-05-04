@@ -10,10 +10,7 @@
  */
 
 /**
-* TODO hacer la union de la informacion extra con la victima
-* TODO hacer la union de la informacion extra con la familia
-* TODO hacer la union de la informacion extra con las fechas
-* TODO hacer la union de la informacion extra con las mascotas
+ * TODO realizar los metodos para cada seccion de informacion de la persona
 */
 public class PassWords {
     
@@ -58,6 +55,10 @@ public class PassWords {
         password += informationDatesWithFamily();
         password += informationDatesWithPets();
         password += informationDatesWithExtra();
+        password += informationExtraWithPerson();
+        password += informationExtraWithFamily();
+        password += informationExtraWithDates();
+        password += informationExtraWithPets();
         return password;
     }
     
@@ -554,7 +555,59 @@ public class PassWords {
     
     private String informationExtraWithPerson(){
         String password = "";
-        
+        for (OtherThings extra : person.getExtra()) {
+            //Union de la palabra extra con el primer nombre de la persona
+            password += extra.getWord() + person.getFirsName() + "\n";
+            //Union de la palabra extra con el segundo nombre de la persona
+            password += extra.getWord() + person.getMiddleName() + "\n";
+            //Union de la palabra extra con el primer apellido de la persona
+            password += extra.getWord() + person.getLastname1() + "\n";
+            //Union de la palabra extra con el segundo apellido de la persona
+            password += extra.getWord() + person.getLastName2() + "\n";
+        }
+        return password;
+    }
+    
+    private String informationExtraWithFamily(){
+        String password = "";
+        for (OtherThings extra : person.getExtra()) {
+            for (Family family : person.getFamilies()) {
+                //Union de la palabra extra con el prmer nombre del familiar
+                password += extra.getWord() + family.getFirsName() + "\n";
+                //Union de la palabra extra con el segundo nombre del familiar
+                password += extra.getWord() + family.getMiddleName() + "\n";
+                //Union de la palabra extra con el primer apellido del familiar
+                password += extra.getWord() + family.getLastname1() + "\n";
+                //Union de la palabra extra con el segundo apellido del familiar
+                password += extra.getWord() + family.getLastName2() + "\n";
+            }
+        }
+        return password;
+    }
+    
+    private String informationExtraWithPets(){
+        String password = "";
+        for (OtherThings extra : person.getExtra()) {
+            for (Pets pet : person.getPets()) {
+                //Union de la palabra extra con el nombre de la mascota
+                password += extra.getWord() + pet.getName() + "\n";
+            }
+        }
+        return password;
+    }
+    
+    private String informationExtraWithDates(){
+        String password = "";
+        for (OtherThings extra : person.getExtra()) {
+            for (DatePerson date : person.getDates()) {
+                //Union de la palabra extra con el dia
+                password += extra.getWord() + date.getDay() + "\n";
+                //Union de la palabra extra con el mes
+                password += extra.getWord() + date.getMonth() + "\n";
+                //Union de la palabra extra con el año
+                password += extra.getWord() + date.getYears() + "\n";
+            }
+        }
         return password;
     }
     
